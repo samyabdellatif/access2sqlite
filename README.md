@@ -24,7 +24,7 @@ A graphical user interface version is available as an executable file for easy u
 
 ## Download
 
-[Download Executable](https://github.com/samyabdellatif/access2sqlite/raw/main/dist/access2sqlite.exe)
+[Download Executable](https://github.com/samyabdellatif/access2sqlite/raw/main/dist/access2sqlite_gui.exe)
 
 The GUI version provides the same functionality with a user-friendly interface for drag-and-drop conversion.
 
