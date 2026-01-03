@@ -2,6 +2,8 @@
 
 A Python utility to convert Microsoft Access databases (.accdb, .mdb) to SQLite format.
 
+<img width="1024" height="1024" alt="access2sqlite" src="https://github.com/user-attachments/assets/2d03141c-bba1-4b66-a17f-7112a003eaa4" />
+
 ## Features
 
 - Converts Microsoft Access databases (.accdb, .mdb) to SQLite format
@@ -22,7 +24,12 @@ pip install pyodbc pandas
 
 A graphical user interface version is available as an executable file for easy use without Python installation:
 
-[Download Access2SQLite GUI (.exe)](https://github.com/samyabdellatif/access2sqlite/releases/download/v1.0/access2sqlite_gui.exe)
+<img width="626" height="548" alt="Screenshot 2026-01-04 011609" src="https://github.com/user-attachments/assets/fd590efd-2092-4cfa-9dfc-4e902b40edd5" />
+
+
+## Download
+
+[Download Executable](https://github.com/samyabdellatif/access2sqlite/raw/main/dist/access2sqlite_gui.exe)
 
 The GUI version provides the same functionality with a user-friendly interface for drag-and-drop conversion.
 
