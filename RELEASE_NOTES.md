@@ -75,6 +75,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-**Download**: [Access2SQLite GUI v1.0](https://github.com/samyabdellatif/access2sqlite/releases/latest/download/access2sqlite_gui.exe)
+**Download**: [Access2SQLite GUI v1.0](https://github.com/samyabdellatif/access2sqlite/raw/main/dist/access2sqlite_gui.exe)
 
 **Repository**: https://github.com/samyabdellatif/access2sqlite
