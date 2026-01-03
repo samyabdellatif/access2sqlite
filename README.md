@@ -22,7 +22,9 @@ pip install pyodbc pandas
 
 A graphical user interface version is available as an executable file for easy use without Python installation:
 
-download the exe file from /dist
+## Download
+
+[Download Executable](https://github.com/USERNAME/REPO/raw/main/dist/access2sqlite.exe)
 
 The GUI version provides the same functionality with a user-friendly interface for drag-and-drop conversion.
 
