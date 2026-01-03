@@ -76,29 +76,6 @@ python access2sqlite.py database.accdb --verbose
 - pandas (for data processing)
 - sqlite3 (built into Python)
 
-## Example Output
-
-```
-$ python access2sqlite.py sample.accdb
-Converting sample.accdb to sample.sqlite
-Found 5 tables with 10,000 total records
-Converting table: Customers
-  Processed 1000 rows
-  Processed 2000 rows
-  Processed 3000 rows
-  Processed 4000 rows
-  Processed 5000 rows
-Successfully converted table: Customers
-Converting table: Orders
-  Processed 1000 rows
-  Processed 2000 rows
-  Processed 3000 rows
-  Processed 4000 rows
-  Processed 5000 rows
-Successfully converted table: Orders
-Conversion completed successfully!
-SQLite database created: sample.sqlite
-```
 
 ## Error Handling
 
