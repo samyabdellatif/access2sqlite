@@ -1,6 +1,6 @@
 # Access to SQLite Converter
 
-A Python utility to convert Microsoft Access databases (.accdb, .mdb) to SQLite format.
+A Python utility to convert Microsoft Access databases (.accdb, .mdb) to SQLite format on MS Windows systems.
 
 <img width="1024" height="1024" alt="access2sqlite" src="https://github.com/user-attachments/assets/2d03141c-bba1-4b66-a17f-7112a003eaa4" />
 
