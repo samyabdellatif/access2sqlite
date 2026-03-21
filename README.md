@@ -11,6 +11,10 @@ A Python utility to convert Microsoft Access databases (.accdb, .mdb) to SQLite 
 - Processes tables in chunks to handle large databases efficiently
 - Preserves table structure and data types
 - Command-line interface with multiple options
+- Automatic Access ODBC driver detection with helpful error messages
+- Robust error handling with partial conversion support
+- Thread-safe cancellation in GUI mode
+- Detailed conversion summaries showing successful and failed tables
 
 ## Installation
 
@@ -91,10 +95,22 @@ The converter includes comprehensive error handling for:
 - Invalid file formats
 - Database connection issues
 - Table conversion failures
+- Missing Microsoft Access ODBC drivers (with helpful installation instructions)
+- Resource cleanup on errors (connections properly closed)
+
+**Partial Conversion Support**: If some tables fail to convert, the tool will:
+- Continue converting remaining tables
+- Keep the partial SQLite database
+- Log a detailed summary showing which tables succeeded and which failed
+- Report specific error messages for each failed table
 
 ## Notes
 
-- The converter requires Microsoft Access Database Engine to be installed on Windows for pyodbc to work with Access files
+- The converter requires **Microsoft Access Database Engine** to be installed on Windows for pyodbc to work with Access files
+  - The tool will detect if the driver is missing and provide download instructions
+  - Download from: https://www.microsoft.com/en-us/download/details.aspx?id=54920
 - Large databases are processed in chunks to prevent memory issues
 - All tables in the Access database are converted automatically
 - The converter preserves data types and table structure as much as possible
+- Tables with an ID column are paginated efficiently; tables without ID columns are read in full
+- SQL syntax is optimized for Microsoft Access compatibility (uses TOP instead of LIMIT)

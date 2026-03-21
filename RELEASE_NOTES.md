@@ -1,3 +1,46 @@
+# Access2SQLite Release Notes
+
+## v1.1 - Bug Fixes and Improvements (March 2026)
+
+### 🐛 Critical Bug Fixes
+
+- **Fixed SQL Syntax Compatibility**: Replaced unsupported `LIMIT` clause with Access-compatible `TOP` syntax
+- **Fixed OFFSET/FETCH Issues**: Removed SQL Server-specific syntax that caused errors with Access databases
+- **Fixed ID-Based Chunking**: Corrected pagination logic to track actual ID values instead of row counts
+- **Fixed Resource Leaks**: Added proper try-finally blocks to ensure database connections are always closed
+
+### ✨ New Features
+
+- **Automatic Driver Detection**: Tool now checks for Microsoft Access ODBC driver on startup
+  - Provides helpful error message with download link if driver is missing
+  - Lists available ODBC drivers to assist troubleshooting
+- **Partial Conversion Support**: Failed table conversions no longer stop the entire process
+  - Tool continues converting remaining tables
+  - Keeps partial SQLite database with successful conversions
+  - Logs detailed summary of successful and failed tables
+- **Thread-Safe GUI Cancellation**: Improved stop button functionality
+  - Uses `threading.Event()` for proper thread synchronization
+  - Prevents corruption when cancelling conversions
+
+### 🔧 Code Quality Improvements
+
+- **Eliminated Code Duplication**: Extracted shared converter logic to `access2sqlite_core.py`
+  - Both CLI and GUI versions now import from single source
+  - Easier maintenance and updates
+- **Better Exception Handling**: Replaced bare `except:` clauses with specific exception types
+- **Enhanced Logging**: Added detailed conversion summaries showing which tables succeeded/failed
+- **Improved Error Messages**: More descriptive error messages for troubleshooting
+
+### 📝 Technical Changes
+
+- SQL queries now use Access-compatible syntax throughout
+- ID-based pagination properly tracks maximum ID value
+- Tables without ID columns read all data at once (more reliable)
+- All database connections properly cleaned up even on errors
+- Thread-safe cancellation mechanism in GUI mode
+
+---
+
 # Access2SQLite GUI v1.0 - Initial Release
 
 ## 🚀 Overview
