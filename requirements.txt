@@ -1,2 +1,6 @@
+# Core dependencies (required for lightweight version)
 pyodbc>=4.0.0
-pandas>=1.5.0
+
+# Optional: pandas version (legacy, uses access2sqlite_core.py)
+# Adds ~30MB to executable size but may handle edge cases better
+# pandas>=1.5.0

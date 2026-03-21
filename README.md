@@ -6,6 +6,7 @@ A Python utility to convert Microsoft Access databases (.accdb, .mdb) to SQLite 
 
 ## Features
 
+- **Lightweight executable (~13 MB)** - Optimized build without heavy dependencies
 - Converts Microsoft Access databases (.accdb, .mdb) to SQLite format
 - Handles both Access 2003 (.mdb) and Access 2007+ (.accdb) formats
 - Processes tables in chunks to handle large databases efficiently
@@ -20,6 +21,11 @@ A Python utility to convert Microsoft Access databases (.accdb, .mdb) to SQLite 
 
 Install the required dependencies:
 
+```bash
+pip install pyodbc
+```
+
+For the Python scripts (optional pandas-based legacy version):
 ```bash
 pip install pyodbc pandas
 ```

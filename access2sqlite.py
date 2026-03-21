@@ -9,7 +9,7 @@ import argparse
 import sys
 import logging
 
-from access2sqlite_core import AccessToSQLite
+from access2sqlite_core_lite import AccessToSQLite  # Using lightweight version without pandas
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
